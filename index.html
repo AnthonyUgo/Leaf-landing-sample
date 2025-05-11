@@ -2,146 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>A Leaf Supply Co</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kumbh+Sans:wght@400;700&family=Rampart+One&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Rampart+One&display=swap" rel="stylesheet');
-
     body {
       margin: 0;
       font-family: 'Kumbh Sans', sans-serif;
-      scroll-behavior: smooth;
-      background: linear-gradient(to bottom, #1a2e2b, #2e4a3b);
+      background: radial-gradient(circle at center, #1b2924, #101b17);
+      background-image: url('https://www.transparenttextures.com/patterns/smoke.png');
+      background-size: cover;
+      background-attachment: fixed;
       color: #e8f5e9;
     }
 
     header {
       text-align: center;
-      padding: 3rem 1rem 1rem;
+      padding: 3rem 1rem 2rem;
     }
 
     header img {
-      width: 120px;
+      width: 200px;
       margin-bottom: 1rem;
     }
 
     header h1 {
-  margin: 0;
-  font-size: 3.5rem;
-  font-family: 'Rampart One', cursive;
-  color: #a8c686;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px #1a2e2b;
-}
-header p {
-  font-family: 'Caveat', cursive;
-  font-size: 1.8rem;
-  margin-top: 0.5rem;
-  color: #d4edc9;
-}
+      margin: 0;
+      font-size: 3.5rem;
+      font-family: 'Rampart One', cursive;
+      color: #a8c686;
+      text-shadow: 2px 2px #1a2e2b;
+    }
+
+    header p {
+      font-family: 'Caveat', cursive;
+      font-size: 1.8rem;
+      margin-top: 0.5rem;
+      color: #d4edc9;
+    }
 
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 1rem;
-      background-color: rgba(0, 0, 0, 0.2);
-    }
-
-    nav a {
-      color: #e8f5e9;
-      text-decoration: none;
+      margin-top: 1.5rem;
       font-weight: bold;
     }
 
-    section {
-      padding: 3rem 2rem;
-      max-width: 800px;
+    nav a {
+      text-decoration: none;
+      color: #d4edc9;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f0f5d9;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 600px;
       margin: auto;
     }
 
-    .hero, .products, .contact {
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      padding: 2rem;
-      margin-bottom: 2rem;
+    section {
+      background-color: rgba(23, 43, 35, 0.85);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 
-    h2 {
-      color: #a8c686;
+    section h2 {
+      margin-top: 0;
+      color: #d4edc9;
     }
 
-    a {
-      color: #a8c686;
+    section p {
+      margin: 0.5rem 0 0;
+      line-height: 1.6;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #111;
-      color: #a8c686;
-    }
-
-    .scroll-section {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.6s ease-out;
-    }
-
-    .scroll-visible {
-      opacity: 1;
-      transform: none;
+      font-size: 0.9rem;
+      color: #b2d8a6;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="A Leaf Supply Co Logo" />
+    <h1>A Leaf Supply Co</h1>
+    <p>Smoke better. Chill harder.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header>
-  <img src="logo2.png" alt="A Leaf Supply Co Logo" />
-  <h1>A Leaf Supply Co</h1>
-  <p>Smoke better. Chill harder.</p>
-</header>
+  <main>
+    <section id="about">
+      <h2>Welcome to the Leaf Life</h2>
+      <p>We’re your mellow go-to for premium smoke goods. Carefully curated to keep your vibe lifted.</p>
+    </section>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#products">Products</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <section id="products">
+      <h2>Goods That Elevate</h2>
+      <p>From classic rolling papers to artisanal glass, we’ve got the gear to enhance your session.</p>
+    </section>
 
-<section id="about" class="scroll-section hero">
-  <h2>Welcome to the Leaf Life</h2>
-  <p>We’re your mellow go-to for premium smoke goods. Carefully curated to keep your vibe lifted.</p>
-</section>
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p>Email: contact@aleafsupplyco.com</p>
+    </section>
+  </main>
 
-<section id="products" class="scroll-section products">
-  <h2>Goods That Elevate</h2>
-  <p>From classic rolling papers to artisanal glass, we've got the gear to enhance your session.</p>
-</section>
-
-<section id="contact" class="scroll-section contact">
-  <h2>Get in Touch</h2>
-  <p>Email: contact@aleafsupplyco.com</p>
-  <p>Instagram: <a href="https://instagram.com">@aleafsupplyco</a></p>
-</section>
-
-<footer>
-  &copy; 2025 A Leaf Supply Co
-</footer>
-
-<script>
-  const sections = document.querySelectorAll('.scroll-section');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting) {
-        entry.target.classList.add('scroll-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-
-  sections.forEach(section => observer.observe(section));
-</script>
-
+  <footer>
+    &copy; 2025 A Leaf Supply Co. All rights reserved.
+  </footer>
 </body>
 </html>
